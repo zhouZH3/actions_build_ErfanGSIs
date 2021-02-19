@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/5T/MP/OnePlus5THydrogen_43_OTA_064_all_2009080056_338a836209c54a7e.zip
-  ROM_NAME: OxygenOS
+  ROM_URL: https://ip4163629176.mobgslb.tbcache.com/Firmware/Flyme/16T/8.1.5.0/cn/20200911100617/847d887d/update.zip?ali_redirect_domain=firmware.meizu.com&ali_redirect_ex_ftag=58c96bee5a761836aac3ce0e8ff234f01f61aea6e80651c3&ali_redirect_ex_tmining_ts=1613731399&ali_redirect_ex_tmining_expire=3600&ali_redirect_ex_hot=100
+  ROM_NAME: Flme
   TZ: Asia/Shanghai
 
 jobs:
@@ -61,7 +61,7 @@ jobs:
        - name: Upload GSI to BitSend
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer bit final/GSI.zip
+              ./transfer gof final/GSI.zip
 
          
             
